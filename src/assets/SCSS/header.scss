@@ -1,2 +1,29 @@
 @use './partials/variables.scss' as *;
 @use './partials/mixins.scss' as *;
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo_header{
+    img{
+        width: 60px;
+        display: block;
+    }
+}
+
+ul{
+    li{
+        display: inline-block;
+        margin-right: 8px;
+
+        a{
+            text-decoration: none;
+            color: $light_gray_DC;
+            font-weight: 600;
+        }
+    }
+}

@@ -9,7 +9,7 @@
 
 export default {
     data(){
-
+        
     },
    
     methods: {
@@ -20,10 +20,38 @@ export default {
 </script>
 
 <template>
-    <h1>ciao</h1>
+     <header>
+        <div class="container header_container">
+            <div class="logo_header">
+                <img src="../../public/img/dc-logo.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Characters</a>
+                    </li>
+                    <li>
+                        <a href="#">Comics</a>
+                    </li>
+                    <li>
+                        <a href="#">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">TV</a>
+                    </li>
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Collectibles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </header>
 </template>
 
 <style lang="scss" scoped>
-  @use '../assets/SCSS/header.scss'
-
+    @use'../assets/SCSS/main.scss';
+    @use '../assets/SCSS/header.scss';
 </style>

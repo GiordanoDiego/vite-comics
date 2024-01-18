@@ -1,0 +1,132 @@
+@use './partials/variables.scss' as *;
+@use './partials/mixins.scss' as *;
+
+
+// section 1 footer
+.footer_1_container{
+    background-color: $blue_DC;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.container_footer_1{
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.cards_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        
+        img{
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+// section 2 footer
+.footer_2_container{
+    background-image: url("/img/footer-bg.jpg");
+    min-height: 300px;
+    color: white;
+   
+
+    .container{
+        display: flex;
+        
+
+        >*{
+            width: 50%;
+        }
+    }
+}
+.left_footer_2{
+    display: flex;
+    padding: 20px;
+    >*{
+        margin-right: 20px;
+        margin-top: 8px;
+    }
+    ul{
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $light_gray_DC;
+            }
+        }
+    }
+    
+}
+.right_footer_2{
+    display: flex;
+    justify-content: end;
+   img{
+        width: 300px;
+        display: block;
+   } 
+}
+
+
+
+// section 3 footer
+.footer_3_container{
+    background-color: $gray_DC;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    >*{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .link_sing_up{
+            border: 2px solid $blue_DC;
+            padding: 5px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.right_footer_3{
+    display: flex;
+    align-items: center;
+    >*{
+        margin-right: 8px;
+    }
+    .socials_container{
+        display: flex;
+        
+        .social_container{
+            margin-right: 8px;
+            img{
+                 width: 30px;
+                 display: block;
+            }
+        }
+    }
+    
+    .follow_container{
+        color: $blue_DC;
+        font-weight: 600;
+    }
+}

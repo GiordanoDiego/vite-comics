@@ -32,6 +32,6 @@ export default {
     <AppFooter/>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
       @use "./assets/SCSS/main.scss" as *;
 </style>

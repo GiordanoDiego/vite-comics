@@ -21,9 +21,13 @@ export default {
 </script>
 
 <template>
-  
+    <main>
+        <div class="container">
+            Content goes here...
+        </div>
+    </main>
 </template>
 
 <style lang="scss" scoped>
-
+    @use'../assets/SCSS/main.scss';
 </style>
