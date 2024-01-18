@@ -9,7 +9,18 @@
 
 export default {
     data(){
-        
+        link: [
+            "Characters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Collectibles",
+            "Video",
+            "Fans",
+            "News",
+            "Shop",
+        ]
     },
    
     methods: {
