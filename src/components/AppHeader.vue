@@ -17,13 +17,13 @@ export default {
     }
 }
 
-
 </script>
 
 <template>
-  
+    <h1>ciao</h1>
 </template>
 
 <style lang="scss" scoped>
+  @use '../assets/SCSS/header.scss'
 
 </style>
