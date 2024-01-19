@@ -16,5 +16,76 @@
 main{
     background-color: $black_DC;
     color: white;
-    padding: 20px;
+  
+
+    .jumbotron_container{
+        height: 300px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        object-position: top;
+        }
+    }
+
+    .series_container{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+        .single_series{
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 25px;
+            width: calc((100% / 6) - 20px);
+            
+            img{
+                width: 100%;
+                height: calc((1100px / 6) - 20px);
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+}
+.button_container_current{
+    display: flex;
+    margin-top: -17px;
+    button{
+        background-color: $blue_DC;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.button_container_load{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        
+        button{
+            background-color: $blue_DC;
+            border: none;
+            color: white;
+            padding: 6px 20px;
+            text-align: center;
+            font-weight: 600;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
 }

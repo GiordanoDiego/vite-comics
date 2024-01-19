@@ -5,7 +5,7 @@
         2) Dichiarazione del componente all'interno dell'oggetto
         3) Utilizzo del componente    
 */
-
+import SingleSeries from './singleSeries.vue'
 
 export default {
     data(){
@@ -86,6 +86,9 @@ export default {
                     ]
         }
     },
+    components: {
+        SingleSeries
+    },
    
     methods: {
 
@@ -97,8 +100,24 @@ export default {
 
 <template>
     <main>
-        <div class="container">
-            Content goes here...
+        <div class="jumbotron_container">
+                <img src="/img/jumbotron.jpg" alt="">
+        </div>
+        <div class="container button_container_current">
+            <button>
+                <a href="">CURRENT SERIES</a>
+            </button>
+        </div>
+        <div class="series_container container">
+           <SingleSeries 
+           v-for="(singleSeries, i) in series" :key="i"
+           :series = "singleSeries"
+           />
+        </div>
+        <div class="button_container_load">
+            <button>
+                <a href="">LOAD MORE</a>
+            </button>
         </div>
     </main>
 </template>
