@@ -21,6 +21,8 @@
     align-items: center;
     justify-content: space-between;
 
+    
+
     .card{
         display: flex;
         justify-content: space-around;
@@ -32,6 +34,11 @@
             margin-right: 10px;
         }
     }
+    >*:nth-child(4){
+        img{
+            width: 30px;
+        }
+    }
 }
 
 
@@ -39,7 +46,9 @@
 // section 2 footer
 .footer_2_container{
     background-image: url("/img/footer-bg.jpg");
-    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    max-height: 300px;
     color: white;
    
 
@@ -68,18 +77,19 @@
             a{
                 text-decoration: none;
                 color: $light_gray_DC;
+                font-size: 0.9em;
             }
         }
     }
     
 }
 .right_footer_2{
-    display: flex;
-    justify-content: end;
-   img{
-        width: 300px;
-        display: block;
-   } 
+    background-image: url("/img/dc-logo-bg.png");
+    background-position:right;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    max-height: 300px;
+    overflow: hidden;
 }
 
 
@@ -126,7 +136,10 @@
     }
     
     .follow_container{
-        color: $blue_DC;
         font-weight: 600;
+        a{
+            text-decoration: none;
+            color: $blue_DC;
+        }
     }
 }

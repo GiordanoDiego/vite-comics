@@ -9,29 +9,67 @@
 
 export default {
     data(){
-        footer1: [
+        return{
+            shop: [
             {
                 name: "DIGITAL COMICS",
-                img: "./img/buy-comics-digital-comics.png"
+                img: "/img/buy-comics-digital-comics.png"
             },
             {
                 name: "DC MERCHANDISE",
-                img: "./img/buy-comics-merchandise.png"
+                img: "/img/buy-comics-merchandise.png"
             },
             {
                 name: "SUBSCRIPTION",
-                img: "./img/buy-comics-subscriptions.png"
+                img: "/img/buy-comics-subscriptions.png"
             },
             {
                 name: "COMIC SHOP LOCATOR",
-                img: "./img/buy-comics-shop-locator.png"
+                img: "/img/buy-comics-shop-locator.png"
             },
             {
                 name: "DC POWER VISA",
-                img: "./img/buy-dc-power-visa.svg"
+                img: "/img/buy-dc-power-visa.svg"
             },
 
-        ]
+        ],
+
+        socials:[
+                {
+                    img: "/img/footer-facebook.png",
+                    name: "Facebook"
+                },
+                {
+                    img: "/img/footer-twitter.png",
+                    name: "Twitter"
+                },
+                {
+                    img: "/img/footer-youtube.png",
+                    name: "Youtube"
+                },
+                {
+                    img: "/img/footer-pinterest.png",
+                    name: "Pinterest"
+                },
+                {
+                    img: "/img/footer-periscope.png",
+                    name: "Periscope"
+                },            
+            ],
+
+            DC:[
+                "Characters",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Collectibles",
+                "Video",
+                "Fans",
+                "News"
+            ]
+        }
+        
     },
    
     methods: {
@@ -48,7 +86,7 @@ export default {
         <div class="footer_1_container">
             <div class="container_footer_1">
                 <div class="cards_footer">
-                    <div class="card" v-for="(card, i) in footer1">
+                    <div class="card" v-for="(card, i) in shop" :key="i">
                         <div>
                             <img :src="card.img" alt="">
                         </div>
@@ -69,51 +107,16 @@ export default {
                     <div>
                         DC COMICS
                         <ul>
-                            <li>
+                            <li v-for="(link, i) in DC" :key="i">
                                 <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
+                                    {{link}}
                                 </a>
                             </li>
                         </ul>
                         
                         SHOP
                         <ul>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
+                            <li v-for="i in 2" :key="i">
                                 <a href="#">
                                     Characters
                                 </a>
@@ -122,53 +125,8 @@ export default {
                     </div>
                     <div>
                        DC
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
+                       <ul>
+                            <li v-for="i in 11" :key="i">
                                 <a href="#">
                                     Characters
                                 </a>
@@ -178,27 +136,7 @@ export default {
                     <div>
                         SITES
                         <ul>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Characters
-                                </a>
-                            </li>
-                            <li>
+                            <li v-for="i in 5" :key="i">
                                 <a href="#">
                                     Characters
                                 </a>
@@ -207,7 +145,7 @@ export default {
                     </div>
                 </div>
                 <div class="right_footer_2">
-                    <img src="../../public/img/dc-logo-bg.png" alt="">
+                    
                 </div>
             </div>
             
@@ -225,23 +163,13 @@ export default {
                 </div>
                 <div class="right_footer_3">
                     <div class="follow_container">
-                        FOLLOW US
+                        <a href="#">FOLLOW US</a>
                     </div>
                     <div class="socials_container">
-                        <div class="social_container">
-                        <img src="../../public/img/footer-facebook.png" alt="">
-                        </div>
-                        <div class="social_container">
-                            <img src="../../public/img/footer-twitter.png" alt="">
-                        </div>
-                        <div class="social_container">
-                            <img src="../../public/img/footer-youtube.png" alt="">
-                        </div>
-                        <div class="social_container">
-                            <img src="../../public/img/footer-pinterest.png" alt="">
-                        </div>
-                        <div class="social_container">
-                            <img src="../../public/img/footer-periscope.png" alt="">
+                        <div class="social_container" v-for="(social, i) in socials" :key="i">
+                            <a href="#">
+                                 <img :src="social.img" :alt="social.name">
+                            </a>
                         </div>
                     </div>
                    
